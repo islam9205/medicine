@@ -20,12 +20,12 @@
 			</video>
 			<h1 class="title">LevelUp</h1>
 			<div class="container promo_margin">
-				<img class="product-photo" src="i/prod.png" alt="Лекарство">
+				<img class="product-photo" src="i/prod.png" alt="Продукт">
 				<ul class="list">
 					<li>Характеристика 1</li>
 					<li>Характеристика 2</li>
-					<li class="promo__item_margin">Характеристика 3</li>
-					<li><a class="link green" href="">Заказать</a></li>
+					<li class="item_margin">Характеристика 3</li>
+					<li><a class="link green" href="#order-form">Заказать</a></li>
 				</ul>
 			</div>
 		</header>
@@ -39,24 +39,55 @@
 					<li>Иградиент	3</li>
 					<li>Иградиент	4</li>
 					<li>Иградиент	5</li>
-					<li>Иградиент	6</li>
+					<li class="item_margin">Иградиент	6</li>
+					<li><a class="link green" href="#order-form">Заказать</a></li>
 				</ul>
 			</div>
 			<div class="container product-composition__600px">
-				<ul>
-					<li></li>
-					<li></li>
-					<li></li>
+				<ul class="list product-composition_margin">
+					<li class="product-composition__item">
+						<figure class="product-composition__ingredient">
+							<img class="product-composition__img-ingredient product-composition__img-ingredient_mixing" src="i/is-sage.png" alt="Шалфей">
+							<figcaption class="product-composition__text product-composition__text_mixing">Шалфей</figcaption>
+						</figure>
+					</li>
+					<li class="product-composition__item">
+						<figure class="product-composition__ingredient">
+							<img class="product-composition__img-ingredient product-composition__img-ingredient_mixing" src="i/is-sage.png" alt="Шалфей">
+							<figcaption class="product-composition__text product-composition__text_mixing">Шалфей</figcaption>
+						</figure>
+					</li>
+					<li class="product-composition__item">
+						<figure class="product-composition__ingredient">
+							<img class="product-composition__img-ingredient product-composition__img-ingredient_mixing" src="i/is-sage.png" alt="Шалфей">
+							<figcaption class="product-composition__text product-composition__text_mixing">Шалфей</figcaption>
+						</figure>
+					</li>
 				</ul>
-				<figure></figure>
-				<ul>
-					<li></li>
-					<li></li>
-					<li></li>
+				<figure class="product-composition_margin"></figure>
+				<ul class="list product-composition_margin">
+					<li class="product-composition__item">
+						<figure class="product-composition__ingredient">
+							<img class="product-composition__img-ingredient product-composition__img-ingredient_mixing" src="i/is-sage.png" alt="Шалфей">
+							<figcaption class="product-composition__text product-composition__text_mixing">Шалфей</figcaption>
+						</figure>
+					</li>
+					<li class="product-composition__item">
+						<figure class="product-composition__ingredient">
+							<img class="product-composition__img-ingredient product-composition__img-ingredient_mixing" src="i/is-sage.png" alt="Шалфей">
+							<figcaption class="product-composition__text product-composition__text_mixing">Шалфей</figcaption>
+						</figure>
+					</li>
+					<li class="product-composition__item">
+						<figure class="product-composition__ingredient">
+							<img class="product-composition__img-ingredient product-composition__img-ingredient_mixing" src="i/is-sage.png" alt="Шалфей">
+							<figcaption class="product-composition__text product-composition__text_mixing">Шалфей</figcaption>
+						</figure>
+					</li>
 				</ul>
 			</div>
 		</section>
-		<section class="blue-background reviews">
+		<section class="blue-background">
 			<h2 class="visually-hiden">Отзывы</h2>
 			<div class="testimonials">
 				<div class="scroller">
@@ -92,30 +123,52 @@
 				<span class="testimonials__btn next">&gt;</span>
 		 </div>
 		</section>
-		<section class="promo2">
+		<section class="white-background">
 			<h2 class="visually-hiden">Промо</h2>
-			<figure></figure>
-			<secton class="description">
-				<h3 class="visually-hiden">Описание</h3>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, mollitia.
-				</p>
-				<ul>
-					<li></li>
-					<li></li>
-					<li></li>
-				</ul>
-				<a href="#">Заказать</a>
-			</secton>
-		</section>
-		<footer class="order-form">
-			<h2>LevelUp</h2>
-			<div class="timer"></div>
 			<div class="container">
-				<figure></figure>
-				<div class="price"></div>
+				<figure class="figurepic">
+					<img class="doctorpic" src="i/doctor.png" alt="Доктор с продуктом">
+				</figure>
+				<div>  <!-- description -->
+					<h3 class="visually-hiden">Описание</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, mollitia.
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, mollitia.
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, mollitia.
+					</p>
+					<a class="link green" href="#order-form">Заказать</a>
+				</div>
 			</div>
-			<form action=""></form>
+			<ul class="list promo2__list">
+				<li class="promo2__item">Характеристика 1</li>
+				<li class="promo2__item">Характеристика 2</li>
+				<li class="promo2__item">Характеристика 3</li>
+			</ul>
+		</section>
+		<footer class="blue-background">
+			<h2 class="title order-form__title">LevelUp</h2>
+			<div class="timer">
+				<script src="//megatimer.ru/get/39fc31ec5be4d3d5d0534ae9244904ec.js"></script>
+			</div>
+			<div class="container order-form__container">
+				<div>
+					<figure>
+						<img class="order-form__pic" src="i/prod.png" alt="Продукт">
+					</figure>
+					<div class="price">
+						<p class="old-price">1500</p>
+						<p class="animation">1000</p>
+					</div>
+				</div>
+				<form class="order-form__form" action="" method="POST"	id="order-form">
+					<label for="" class="order-form__meaning">Имя:</label>
+					<input class="order-form__input" type="text" name="name">
+					<label for="" class="order-form__meaning">Телефон:</label>
+					<!-- <input class="order-form__input" type="text" onkeyup="var yratext=/['A-я',':']/; if(yratext.test(this.value)) alert('Введены запрещенные символы')"> -->
+					<input class="order-form__input" type="number">
+					<input class="order-form__input" type="submit" value="Отправить">
+				</form>
+			</div>
 		</footer>
 
 		<script src="js/carousel.js"></script>
