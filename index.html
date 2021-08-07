@@ -44,48 +44,66 @@
 				</ul>
 			</div>
 			<div class="container product-composition__600px">
-				<ul class="list product-composition_margin">
+				<ul class="list">
 					<li class="product-composition__item">
 						<figure class="product-composition__ingredient">
-							<img class="product-composition__img-ingredient product-composition__img-ingredient_mixing" src="i/is-sage.png" alt="Шалфей">
-							<figcaption class="product-composition__text product-composition__text_mixing">Шалфей</figcaption>
+							<img class="product-composition__img-ingredient" src="i/is-sage.png" alt="Шалфей">
+							<figcaption class="product-composition__text">Шалфей</figcaption>
 						</figure>
+						<svg class="svg product-composition__svg1">
+							<line class="svg__line" x1="20" y1="20" x2="70" y2="100">
+						</svg>
 					</li>
 					<li class="product-composition__item">
 						<figure class="product-composition__ingredient">
-							<img class="product-composition__img-ingredient product-composition__img-ingredient_mixing" src="i/is-sage.png" alt="Шалфей">
-							<figcaption class="product-composition__text product-composition__text_mixing">Шалфей</figcaption>
+							<img class="product-composition__img-ingredient" src="i/is-sage.png" alt="Шалфей">
+							<figcaption class="product-composition__text">Шалфей</figcaption>
 						</figure>
+						<svg class="svg product-composition__svg2">
+							<line class="svg__line" x1="20" y1="50" x2="60" y2="50">
+						</svg>
 					</li>
 					<li class="product-composition__item">
 						<figure class="product-composition__ingredient">
-							<img class="product-composition__img-ingredient product-composition__img-ingredient_mixing" src="i/is-sage.png" alt="Шалфей">
-							<figcaption class="product-composition__text product-composition__text_mixing">Шалфей</figcaption>
+							<img class="product-composition__img-ingredient" src="i/is-sage.png" alt="Шалфей">
+							<figcaption class="product-composition__text">Шалфей</figcaption>
 						</figure>
+						<svg class="svg product-composition__svg3">
+							<line class="svg__line" x1="20" y1="80" x2="70" y2="0">
+						</svg>
 					</li>
 				</ul>
-				<figure class="product-composition_margin product-composition__figure">
+				<figure class="product-composition__figure">
 					<img class="product-photo product-photo__composition" src="i/prod.png" alt="Продукт">
 					<a class="link green" href="#order-form">Заказать</a>
 				</figure>
-				<ul class="list product-composition_margin">
+				<ul class="list">
 					<li class="product-composition__item">
 						<figure class="product-composition__ingredient">
-							<img class="product-composition__img-ingredient product-composition__img-ingredient_mixing" src="i/is-sage.png" alt="Шалфей">
-							<figcaption class="product-composition__text product-composition__text_mixing">Шалфей</figcaption>
+							<img class="product-composition__img-ingredient" src="i/is-sage.png" alt="Шалфей">
+							<figcaption class="product-composition__text">Шалфей</figcaption>
 						</figure>
+						<svg class="svg product-composition__svg4">
+							<line class="svg__line" x1="70" y1="20" x2="20" y2="100">
+						</svg>
 					</li>
 					<li class="product-composition__item">
 						<figure class="product-composition__ingredient">
-							<img class="product-composition__img-ingredient product-composition__img-ingredient_mixing" src="i/is-sage.png" alt="Шалфей">
-							<figcaption class="product-composition__text product-composition__text_mixing">Шалфей</figcaption>
+							<img class="product-composition__img-ingredient" src="i/is-sage.png" alt="Шалфей">
+							<figcaption class="product-composition__text">Шалфей</figcaption>
 						</figure>
+						<svg class="svg product-composition__svg5">
+							<line class="svg__line" x1="30" y1="50" x2="70" y2="50">
+						</svg>
 					</li>
 					<li class="product-composition__item">
 						<figure class="product-composition__ingredient">
-							<img class="product-composition__img-ingredient product-composition__img-ingredient_mixing" src="i/is-sage.png" alt="Шалфей">
-							<figcaption class="product-composition__text product-composition__text_mixing">Шалфей</figcaption>
+							<img class="product-composition__img-ingredient" src="i/is-sage.png" alt="Шалфей">
+							<figcaption class="product-composition__text">Шалфей</figcaption>
 						</figure>
+						<svg class="svg product-composition__svg6">
+							<line class="svg__line" x1="20" y1="0" x2="70" y2="80">
+						</svg>
 					</li>
 				</ul>
 			</div>
@@ -151,7 +169,16 @@
 		<footer class="blue-background">
 			<h2 class="title order-form__title">LevelUp</h2>
 			<div class="timer">
-				<script src="//megatimer.ru/get/39fc31ec5be4d3d5d0534ae9244904ec.js"></script>
+				<script type="application/javascript">
+					var myCountdown1 = new Countdown({
+														 time: 86400 * 3, // 86400 seconds = 1 day
+														width:300, 
+														height:60,  
+														rangeHi:"day",
+														style:"flip"	// <- no comma on last item!
+														});
+					
+					</script>
 			</div>
 			<div class="container order-form__container">
 				<div>
@@ -159,8 +186,8 @@
 						<img class="order-form__pic" src="i/prod.png" alt="Продукт">
 					</figure>
 					<div class="price">
-						<p class="old-price">1500</p>
-						<p class="animation">1000</p>
+						<p class="old-price">1500₽</p>
+						<p class="animation">1000₽</p>
 					</div>
 				</div>
 				<form class="order-form__form" action="" method="POST"	id="order-form">
@@ -175,5 +202,7 @@
 		</footer>
 
 		<script src="js/carousel.js"></script>
+		<script src="js/abc.js"></script>
+		<script src="js/countdown.js" type="text/javascript"></script>
 	</body>
 </html>
