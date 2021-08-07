@@ -332,11 +332,11 @@
   animation-iteration-count: infinite;
  /*  -webkit-animation-name: growAndGlow;
   -webkit-animation-direction: 3s;
-  -webkit-animation-iteration-count: infinite; */
+  -webkit-animation-iteration-count: infinite;
   -moz-animation-name: growAndGlow;
   -moz-animation-direction: 3s;
   -moz-animation-iteration-count: infinite;
-  /* -o-animation-name: growAndGlow;
+  -o-animation-name: growAndGlow;
   -o-animation-direction: 3s;
   -o-animation-iteration-count: infinite; */
 }
@@ -396,15 +396,12 @@
     display: flex;
   }
 
-  /* .product-composition_margin {
-    margin-top: 0;
-  } */
-
   .product-composition__item {
     width: 9rem;
     background-color: coral;
     margin-top: 0;
     margin-bottom: 4rem;
+    position: relative;
   }
 
   .product-composition__ingredient {
@@ -421,23 +418,53 @@
     margin-bottom: 1rem;
   }
 
-  .product-composition__img-ingredient_mixing {
-    /* display: block;
-    margin: 0 auto; */
-  }
-
-  
-
   .product-composition__text {
     text-align: center;
     background-color: white;
   }
 
-  .product-composition__text_mixing {
-    /* display: block;
-    margin: 2.5rem auto; */
+  .svg {
+    position: absolute;
+    width: 5.5rem;
+    height: 7rem;
   }
 
+  .svg__line {
+    stroke: black;
+    stroke-width: 2;
+    stroke-linecap: round;
+  }
+
+  .product-composition__svg1 {
+    top: 7rem;
+    left: 9rem;
+  }
+
+  .product-composition__svg2 {
+    top: 2rem;
+    left: 9rem;
+  }
+
+  .product-composition__svg3 {
+    top: 1rem;
+    left: 9rem;
+  }
+
+  .product-composition__svg4 {
+    top: 7rem;
+    left: -5.6rem;
+  }
+
+  .product-composition__svg5 {
+    top: 2rem;
+    right: 9rem;
+  }
+
+  .product-composition__svg6 {
+    top: 1rem;
+    right: 9rem;
+  }
+  
   .product-composition__figure {
     display: flex;
     flex-direction: column;
@@ -449,15 +476,6 @@
     margin-bottom: 1.5rem;
   }
 
-  /* 
-  .product-composition__product-photo {
-    order: -1;
-    position: relative;
-  }
-
-  .product-composition__product-photo_mixing {
-    margin-left: 8rem;
-  } */
 }
 
 
