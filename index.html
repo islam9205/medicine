@@ -10,6 +10,7 @@
 		<title>LevelUp</title>
 		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 		<link href="css/global.css" rel="stylesheet">
+		<script src="countdown.js" type="text/javascript"></script>
 	</head>
 	<body class="body">
 		<header class="promo">
@@ -45,7 +46,7 @@
 			</div>
 			<div class="container product-composition__600px">
 				<ul class="list">
-					<li class="product-composition__item">
+					<li class="blue-background product-composition__item">
 						<figure class="product-composition__ingredient">
 							<img class="product-composition__img-ingredient" src="i/is-sage.png" alt="Шалфей">
 							<figcaption class="product-composition__text">Шалфей</figcaption>
@@ -54,7 +55,7 @@
 							<line class="svg__line" x1="20" y1="20" x2="70" y2="100">
 						</svg>
 					</li>
-					<li class="product-composition__item">
+					<li class="blue-background product-composition__item">
 						<figure class="product-composition__ingredient">
 							<img class="product-composition__img-ingredient" src="i/is-sage.png" alt="Шалфей">
 							<figcaption class="product-composition__text">Шалфей</figcaption>
@@ -63,7 +64,7 @@
 							<line class="svg__line" x1="20" y1="50" x2="60" y2="50">
 						</svg>
 					</li>
-					<li class="product-composition__item">
+					<li class="blue-background product-composition__item">
 						<figure class="product-composition__ingredient">
 							<img class="product-composition__img-ingredient" src="i/is-sage.png" alt="Шалфей">
 							<figcaption class="product-composition__text">Шалфей</figcaption>
@@ -78,7 +79,7 @@
 					<a class="link green" href="#order-form">Заказать</a>
 				</figure>
 				<ul class="list">
-					<li class="product-composition__item">
+					<li class="blue-background product-composition__item">
 						<figure class="product-composition__ingredient">
 							<img class="product-composition__img-ingredient" src="i/is-sage.png" alt="Шалфей">
 							<figcaption class="product-composition__text">Шалфей</figcaption>
@@ -87,7 +88,7 @@
 							<line class="svg__line" x1="70" y1="20" x2="20" y2="100">
 						</svg>
 					</li>
-					<li class="product-composition__item">
+					<li class="blue-background product-composition__item">
 						<figure class="product-composition__ingredient">
 							<img class="product-composition__img-ingredient" src="i/is-sage.png" alt="Шалфей">
 							<figcaption class="product-composition__text">Шалфей</figcaption>
@@ -96,7 +97,7 @@
 							<line class="svg__line" x1="30" y1="50" x2="70" y2="50">
 						</svg>
 					</li>
-					<li class="product-composition__item">
+					<li class="blue-background product-composition__item">
 						<figure class="product-composition__ingredient">
 							<img class="product-composition__img-ingredient" src="i/is-sage.png" alt="Шалфей">
 							<figcaption class="product-composition__text">Шалфей</figcaption>
@@ -150,7 +151,7 @@
 				<figure class="figurepic">
 					<img class="doctorpic" src="i/doctor.png" alt="Доктор с продуктом">
 				</figure>
-				<div>  <!-- description -->
+				<div>
 					<h3 class="visually-hiden">Описание</h3>
 					<p>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, mollitia.
@@ -169,16 +170,7 @@
 		<footer class="blue-background">
 			<h2 class="title order-form__title">LevelUp</h2>
 			<div class="timer">
-				<script type="application/javascript">
-					var myCountdown1 = new Countdown({
-														 time: 86400 * 3, // 86400 seconds = 1 day
-														width:300, 
-														height:60,  
-														rangeHi:"day",
-														style:"flip"	// <- no comma on last item!
-														});
-					
-					</script>
+				<script src="//megatimer.ru/get/c0991c6360174ac68b82f9e57bae9c0e.js"></script>
 			</div>
 			<div class="container order-form__container">
 				<div>
@@ -191,18 +183,23 @@
 					</div>
 				</div>
 				<form class="order-form__form" action="" method="POST"	id="order-form">
-					<label for="" class="order-form__meaning">Имя:</label>
-					<input class="order-form__input" type="text" name="name">
-					<label for="" class="order-form__meaning">Телефон:</label>
-					<!-- <input class="order-form__input" type="text" onkeyup="var yratext=/['A-я',':']/; if(yratext.test(this.value)) alert('Введены запрещенные символы')"> -->
-					<input class="order-form__input" type="number">
-					<input class="order-form__input" type="submit" value="Отправить">
+					<label for="input_name" class="order-form__meaning">Имя:</label>
+					<div class="order-form__data">
+						<input class="order-form__input" type="text" name="name" id="input_name" required>
+						<label for="input_name" class="order-form__hint">Пример: Ислам</label>
+					</div>
+					<label for="input_phone" class="order-form__meaning">Телефон:</label>
+					<div class="order-form__data">
+						<input class="order-form__input" type="text" name="phone" id="input_phone" required>
+						<label for="input_name" class="order-form__hint">Пример: 89634442233</label>
+					</div>
+					
+					<input class="order-form__submit" type="submit" value="Отправить">
 				</form>
 			</div>
 		</footer>
 
 		<script src="js/carousel.js"></script>
-		<script src="js/abc.js"></script>
-		<script src="js/countdown.js" type="text/javascript"></script>
+		<script src="js/only-numbers.js"></script>
 	</body>
 </html>
