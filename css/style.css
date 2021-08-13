@@ -301,6 +301,7 @@
 .price {
   font-size: 2rem;
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 .old-price {
@@ -324,6 +325,8 @@
 }
 
 .animation {
+  width: 40%;
+  margin: 0 auto;
   animation-name: growAndGlow;
   animation-duration: 3s;
   animation-iteration-count: infinite;
