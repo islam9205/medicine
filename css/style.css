@@ -353,6 +353,7 @@
 
 .order-form__meaning {
   display: block;
+  width: 5rem;
   margin-bottom: 1rem;
 }
 
@@ -368,6 +369,9 @@
 }
 
 .order-form__input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
   width: 11.8rem;
   height: 0.5rem;
   border: 2px solid blue;
@@ -380,7 +384,8 @@
   position: absolute;
 }
 
-.order-form__input:focus + .order-form__hint, 
+.order-form__input:focus + .order-form__hint,
+.order-form__input:hover + .order-form__hint,
 .order-form__input:valid + .order-form__hint {
   display: block;
   font-size: 13px;
@@ -389,7 +394,10 @@
 }
 
 .order-form__input:focus {
-  border-radius: 10px;
+  border: 2px solid rgb(242, 203, 127);
+}
+
+.order-form__input:hover {
   border: 2px solid rgb(242, 203, 127);
 }
 
@@ -405,6 +413,10 @@
 /* Конец блока order-form */
 
 @media screen and (min-width: 480px) {
+
+  .order-form__form {
+    width: 15rem;
+  }
 
   .doctorpic {
     width: 12rem;
@@ -504,11 +516,27 @@
     margin-bottom: 1.5rem;
   }
 
+  .order-form__container {
+    flex-direction: row;
+    /* justify-content: space-between; */
+  }
+
+  .order-form__form {
+    margin: 0;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
+
+
+
 }
 
 
 
 @media screen and (min-width: 1024px) {
 
-  
+  body {
+    width: 768px;
+    margin: 0 auto;
+  }
 }
