@@ -20,8 +20,8 @@
 }
 
 .blue-background {
-  background: -webkit-linear-gradient(left, #2c6add,#0b36d0);
-  background: linear-gradient(to right, #2c6add,#0b36d0);
+  background: -webkit-linear-gradient(left, #789de0,#b3b9d0);
+  background: linear-gradient(to right, #789de0,#b3b9d0);
 }
 
 .list {
@@ -285,7 +285,8 @@
 }
 
 .timer {
-  display: none;
+  display: flex;
+  justify-content: center;
 }
 
 .order-form__container {
@@ -305,10 +306,6 @@
 .old-price {
   text-decoration: line-through;
 }
-
-/* .new-price {
-
-} */
 
 @keyframes growAndGlow {
   from {
@@ -356,15 +353,44 @@
   margin-bottom: 1rem;
 }
 
+.order-form__data {
+  width: 14rem;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.order-form__input,
+.order-form__submit {
+  border-radius: 10px;
+}
+
 .order-form__input {
-  width: 12rem;
+  width: 11.8rem;
   height: 0.5rem;
   border: 2px solid blue;
   padding: 1rem;
-  margin-bottom: 3rem;
 }
 
-.order-form__input[type="submit"] {
+.order-form__hint {
+  display: none;
+  color: #aaa;
+  position: absolute;
+}
+
+.order-form__input:focus + .order-form__hint, 
+.order-form__input:valid + .order-form__hint {
+  display: block;
+  font-size: 13px;
+  top: 5px;
+  right: 5px;  
+}
+
+.order-form__input:focus {
+  border-radius: 10px;
+  border: 2px solid rgb(242, 203, 127);
+}
+
+.order-form__submit {
   display: block;
   width: 10rem;
   height: 100%;
@@ -381,9 +407,9 @@
     width: 12rem;
   }
 
-  .order-form__input {
+  /* .order-form__input {
     width: 15rem;
-  }
+  } */
 }
 
 @media screen and (min-width: 600px) {
@@ -398,7 +424,6 @@
 
   .product-composition__item {
     width: 9rem;
-    background-color: coral;
     margin-top: 0;
     margin-bottom: 4rem;
     position: relative;
