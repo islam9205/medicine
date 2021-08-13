@@ -421,10 +421,6 @@
   .doctorpic {
     width: 12rem;
   }
-
-  /* .order-form__input {
-    width: 15rem;
-  } */
 }
 
 @media screen and (min-width: 600px) {
@@ -518,7 +514,6 @@
 
   .order-form__container {
     flex-direction: row;
-    /* justify-content: space-between; */
   }
 
   .order-form__form {
@@ -526,12 +521,14 @@
     margin-top: 2rem;
     margin-bottom: 4rem;
   }
-
-
-
 }
 
+@media screen and (min-width: 768px) {
 
+  .doctorpic {
+    width: 20rem;
+  }
+}
 
 @media screen and (min-width: 1024px) {
 
